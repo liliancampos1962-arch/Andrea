@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTIVUS - Página Web</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        header, footer {
+            background-color: #2abbc5;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        header img {
+            width: 200px;
+            height: 70px;
+            border-radius: 10px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        header h1 {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+            font-size: 1.8em;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .texto {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        /* Imagen principal con animación flotante + luces azules */
+        .imagen-proyecto {
+            width: 400px;
+            max-width: 100%;
+            border-radius: 20px;
+            margin-top: 30px;
+            box-shadow: 0 0 25px rgba(0, 162, 255, 0.6);
+            animation: flotar 4s ease-in-out infinite, lucesAzules 3s ease-in-out infinite alternate;
+            transition: transform 0.4s ease;
+        }
+
+        .imagen-proyecto:hover {
+            transform: scale(1.05);
+        }
+
+        /* Animación flotante */
+        @keyframes flotar {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Animación de luces azules pulsantes */
+        @keyframes lucesAzules {
+            0% {
+                box-shadow: 0 0 15px rgba(0, 162, 255, 0.4),
+                            0 0 30px rgba(0, 162, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(0, 162, 255, 0.7),
+                            0 0 50px rgba(0, 162, 255, 0.6);
+            }
+            100% {
+                box-shadow: 0 0 15px rgba(0, 162, 255, 0.4),
+                            0 0 30px rgba(0, 162, 255, 0.3);
+            }
+        }
+
+        /* Imagen de mascota */
+        .mascota {
+            width: 250px;
+            max-width: 100%;
+            border-radius: 50%;
+            margin-top: 30px;
+            transition: transform 0.4s ease;
+        }
+        .mascota:hover {
+            transform: scale(1.1);
+        }
+
+        /* Botones animados */
+        .botones {
+            margin-top: 40px;
+        }
+        .boton {
+            background-color: #2abbc5;
+            color: white;
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .boton:hover {
+            background-color: #1b9aa2;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .slogan {
+        font-size: 24px;
+        font-weight: bold;
+        color: #00f0ff;
+        text-shadow:
+            0 0 5px #00f0ff,
+            0 0 10px #00f0ff,
+            0 0 20px #00f0ff,
+            0 0 40px #00f0ff;
+        animation: neón 2s ease-in-out infinite alternate;
+        margin-top: 20px;
+    }
+
+    @keyframes neón {
+        0% {
+            text-shadow:
+                0 0 5px #040716,
+                0 0 10px #031718,
+                0 0 20px #071b1c,
+                0 0 40px #0a2c2e;
+            color: #020c0d;
+        }
+        50% {
+            text-shadow:
+                0 0 10px #001aff,
+                0 0 20px #4f49c2,
+                0 0 30px #5a33be,
+                0 0 50px #2c57bb;
+            color: #1e7add;
+        }
+        100% {
+            text-shadow:
+                0 0 5px #1b23f7,
+                0 0 10px #290cce,
+                0 0 20px #4311d8,
+                0 0 40px #7105ca;
+            color: #9612e2;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="altivus.png" alt="Logo de la empresa">
+        <h1></h1>
+    </header>
+
+    <main>
+        <h2>Conócenos</h2>
+
+        <div class="texto">
+            <p>
+                Bienvenido a la página oficial de <strong>ALTIVUS</strong>.  
+                Somos una empresa dedicada al desarrollo y fabricación de productos electrónicos.  
+                Nuestro objetivo es ofrecer soluciones innovadoras que combinan tecnología, salud, calidad y eficiencia 
+                para satisfacer las necesidades del mercado y de nuestros clientes.
+            </p>
+        </div>
+
+        <!-- Imagen principal con luces azules -->
+        <img src="proyecto.jpg" alt="Imagen representativa de la empresa" class="imagen-proyecto">
+
+        <h3>Blinky, nuestra mascota</h3>
+        <img src="mascota.jpg" alt="Mascota de la empresa" class="mascota">
+
+        <div class="texto">
+            <p>
+                Explora nuestros servicios y descubre cómo podemos ayudarte a crecer en el mundo digital.  
+                En ALTIVUS, la innovación y la calidad son nuestra prioridad para brindarte siempre lo mejor en tecnología.
+            </p>
+        </div>
+
+        <div class="texto">
+    <p class="slogan">
+        <strong>Nuestro Eslogan:</strong>
+       Tu Corazón, Nuestra Tecnología.
+    </p>
+    </div>
+
+        <div class="botones">
+            <button class="boton" onclick="location.href='servicios.html'">Nuestros Productos</button>
+            <button class="boton" onclick="location.href='contacto.html'">Soporte Técnico</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 ALTIVUS S.A. de C.V. | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTIVUS - Soporte Técnico</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f3f3f3; }
+        header, footer { background-color: #2abbc5; color: white; text-align: center; padding: 1em 0; }
+        main { text-align: center; margin-top: 20px; }
+        input, textarea { width: 300px; padding: 10px; margin: 5px 0; }
+        button { background-color: #2abbc5; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        button:hover { background-color: #1b9aa2; }
+
+     .boton-electronico {
+        background-color: #8b60db;
+        color: white;
+        padding: 12px 25px;
+        font-size: 16px;
+        border: 2px solid #ad5ac2;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .boton-electronico:hover {
+        background-color: #1b9aa2;
+        box-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff inset;
+        transform: scale(1.05);
+    }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="altivus.png" alt="Logo de la empresa">
+        <h1></h1>
+    </header>
+    <main>
+        <p>Completa el siguiente formulario si tienes problemas con tu producto:</p>
+        <form>
+            <input type="text" placeholder="Nombre" required><br>
+            <input type="email" placeholder="Correo electrónico" required><br>
+            <textarea placeholder="Mensaje" rows="5" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <br>
+        <button class="boton-electronico" onclick="location.href='Principal.HTML'">Volver a la página principal</button>
+    </main>
+    <footer>
+        <p>© 2025 ALTIVUS S.A. de C.V. | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

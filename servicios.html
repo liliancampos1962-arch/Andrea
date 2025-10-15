@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTIVUS - CARDIONIX</title>
+    <style>
+        body { 
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0; 
+            padding: 0; 
+            background-color: #f3f3f3; 
+        }
+        header, footer { 
+            background-color: #2abbc5; 
+            color: white; 
+            text-align: center; 
+            padding: 1em 0; 
+        }
+        header img {
+            width: 200px;
+            height: 70px;
+            border-radius: 10px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        header h1 {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+            font-size: 1.8em;
+        }
+        main { 
+            text-align: center; 
+            padding: 20px; 
+        }
+        .texto {
+            max-width: 600px; 
+            margin: 0 auto; 
+            text-align: justify; 
+            line-height: 1.5;
+        }
+        a { 
+            color: #007bff; 
+            text-decoration: none; 
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .boton-electronico {
+        background-color: #8b60db;
+        color: white;
+        padding: 12px 25px;
+        font-size: 16px;
+        border: 2px solid #ad5ac2;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .boton-electronico:hover {
+        background-color: #1b9aa2;
+        box-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff inset;
+        transform: scale(1.05);
+    }
+
+        /* Imagen del producto con animación */
+        .producto {
+            width: 300px;
+            max-width: 100%;
+            margin: 30px auto;
+            display: block;
+            animation: reboteCircular 4s ease-in-out infinite;
+        }
+
+        /* Animación de rebote y giro */
+        @keyframes reboteCircular {
+            0% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-15px) rotate(10deg); }
+            50% { transform: translateY(0) rotate(0deg); }
+            75% { transform: translateY(-15px) rotate(-10deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="altivus.png" alt="Logo de la empresa">
+        <h1></h1>
+    </header>
+
+    <main>
+        <h2>CARDIONIX</h2>
+
+        <!-- Imagen del producto con animación -->
+        <img src="prototipo1.jpg" alt="Prototipo Cardionix" class="producto">
+        <div class="texto">
+            <p>
+                Cardionix es un innovador proyecto basado en un sensor de pulso cardiaco diseñado especialmente para la población de la tercera edad. 
+                La idea surge de la necesidad creciente de ofrecer herramientas tecnológicas sencillas, confiables y efectivas que contribuyan al cuidado de la salud de manera práctica y accesible. Este dispositivo permite monitorear la frecuencia cardiaca en tiempo real, 
+                brindando información precisa y útil para detectar posibles irregularidades y prevenir complicaciones cardiovasculares antes de que se conviertan en problemas graves.
+            </p>
+            <p>
+                Nuestro enfoque principal es crear un producto que combine accesibilidad, comodidad y facilidad de uso. Entendemos que la población adulta mayor puede enfrentar dificultades al interactuar con tecnologías complejas, 
+                por lo que Cardionix está diseñado para ser intuitivo, con una interfaz clara y una experiencia de usuario adaptada a sus necesidades. Además, el dispositivo se caracteriza por su portabilidad y diseño ergonómico,
+                 permitiendo que los usuarios puedan utilizarlo en cualquier momento y lugar, sin complicaciones.
+            </p>
+            <p>
+                Más allá del monitoreo individual, Cardionix busca brindar tranquilidad a las familias, quienes podrán confiar en que sus seres queridos cuentan con un apoyo confiable para el control de la salud cardiaca. La información proporcionada por el sensor puede ser utilizada para mantener un registro de la frecuencia cardiaca, identificar patrones anormales y actuar rápidamente en caso de emergencia.
+            </p>
+            <p>
+                En definitiva, Cardionix no solo es un dispositivo médico, sino un aliado para el bienestar integral de la tercera edad. Su objetivo es mejorar la calidad de vida, promover hábitos saludables y ofrecer seguridad tanto a los usuarios como a sus familiares, convirtiéndose en una herramienta indispensable en la rutina diaria para el cuidado del corazón.
+            </p>
+        </div>
+
+        <div style="margin-top: 30px;">
+    <button class="boton-electronico" onclick="location.href='Principal.HTML'">Volver a la página principal</button>
+    <button class="boton-electronico" onclick="location.href='Manual_Cardionix.pdf'" style="margin-left: 15px;">Descargar Manual</button>
+</div>
+
+    <footer>
+        <p>© 2025 ALTIVUS S.A. de C.V. | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
